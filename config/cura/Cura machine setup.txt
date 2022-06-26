@@ -1,0 +1,24 @@
+Printer settings:
+X: 345mm
+Y: 350mm
+Z: 630mm
+
+Heated Rectangular bed
+
+G-code flavor: RepRap
+
+Printerhead Settings:
+X min: -20mm
+Y min: -10mm
+X max: 10mm
+Y max: 10mm
+Gantry Height: 0.0mm
+Number of extruders: 1
+Apply Extruder to GCode: enabled
+
+Extruder:
+0.4mm nozzle
+Filament 1.75mm
+Nozzle offset X: 0mm
+Nozzle offset Y: 0mm
+Cooling Fan Number: 0
