@@ -1,0 +1,2 @@
+G28 XY
+G1 X171 Y190 F4000 ; Move probe to middle of bed (ASK: OK)
