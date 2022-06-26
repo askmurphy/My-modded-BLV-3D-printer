@@ -17,7 +17,14 @@ HARDWARE:
 - Accelerator
 - 24V Meanwell PSU
 
+FIRMWARE:
+RepRapFirmware for Duet 2 WiFi/Ethernet 3.4.0 (2022-03-15)
+Duet WiFi Server Version: 1.26
+Duet Web Control 3.4.0
+
+
 CONFIGURATION:
-=> check files
+
+Everything located in /config/ folder..
 
 >>>> THIS PAGE IS UNDER CONSTRUCTION <<<<  
