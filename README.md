@@ -17,6 +17,13 @@ So, time to do some modifications, a lot of them....  Finally I am now at my BLV
 * Accelerator
 * 24V Meanwell PSU
 
+
+| Just a few photo's | Click to enlarge..|
+|------------|-------------|
+
+| ![BTT smart filament sensor](img/BTT_filament_Sensor.jpg?raw=true "Bigtreetech filament sensor") 
+
+
 # FIRMWARE:
 * RepRapFirmware for Duet 2 WiFi/Ethernet 3.4.0 (2022-03-15)
 * Duet WiFi Server Version: 1.26
