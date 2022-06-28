@@ -43,8 +43,8 @@ M569 P7 S1														; physical drive 7 goes forward - z-axis: right middle
 M569 P8 S1														; physical drive 8 goes forward - z-axis: left front
 M569 P9 S1														; physical drive 9 goes forward - z-axis: left back
 
-M584 X0 Y1 Z7:8:9 E3; three Z motors connected to driver outputs 7 (right middle), 8 (left front) and 9 (left back)
-M671 X386:-29:-29 Y136.5:36.5:233 S0.5 ; leadscrews at rear left, front middle and rear right
+M584 X0 Y1 Z8:9:7 E3; three Z motors connected to driver outputs 8 (left front), 9 (left back) and 7 (right middle)
+M671 X-29:-29:386 Y36.5:233:136.5 S10 ; leadscrews at left front, left back and right middle
 																; This tells the Duet the physical location of the center of the leadscrews.
 																; for reference the order/sequence of defined coordinate positions MUST correspond to
 																; the order of axis drives that was specified above in the M584 gcode 
