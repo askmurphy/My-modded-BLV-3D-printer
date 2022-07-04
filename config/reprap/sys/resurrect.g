@@ -1,14 +1,13 @@
-; File "0:/gcodes/BLVMGNC350_accelerator-UTP-LID.gcode" resume print after print paused at 2022-06-25 20:09
+; File "0:/gcodes/test22.gcode" resume print after print paused at 2022-07-03 19:48
 G21
-M140 P0 S70.0
-G29 S1
-G92 X183.453 Y210.776 Z0.600
+M140 P0 S0.0
+G92 X173.000 Y0.000 Z25.000
 G60 S1
-G10 P0 S245 R245
+G10 P0 S50 R50
 T0 P0
 M98 P"resurrect-prologue.g"
 M116
-M290 X0.000 Y0.000 Z-0.300 R0
+M290 X0.000 Y0.000 Z0.000 R0
 T-1 P0
 T0 P6
 ; Workplace coordinates
@@ -25,16 +24,15 @@ G54
 M106 S0.00
 M106 P0 S0.00
 M116
-G92 E214.61140
-M82
-M486 S0 A"accelerator-UTP-LID.stl"
-M486 S0
+G92 E0.00000
+M83
+M486 S-1
 G17
-M23 "0:/gcodes/BLVMGNC350_accelerator-UTP-LID.gcode"
-M26 S44236
-G0 F6000 Z2.300
-G0 F6000 X183.453 Y210.776
-G0 F6000 Z0.300
-G1 F840.0 P0
+M23 "0:/gcodes/test22.gcode"
+M26 S15717
+G0 F6000 Z27.000
+G0 F6000 X173.000 Y0.000
+G0 F6000 Z25.000
+G1 F3000.0 P0
 G21
 M24

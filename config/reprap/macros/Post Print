@@ -1,0 +1,9 @@
+G91 ;relative positioning
+G1 Z200 F5000; move nozzle relative to position
+M104 S0 						; turn off extruder
+M140 S0 						; turn off bed
+;G1 X0 Y0 Z630 F5000 		    ; prepare for part removal
+M106 S0 						; turn off part cooling fan
+M291 P"Printing finished !" R"Printing.." S1 T3
+
+; in CURA End-Gcode: M98 P"0:/macros/Post Print"
