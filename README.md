@@ -34,4 +34,4 @@ So, time to do some modifications, a lot of them....  Finally I am now at my BLV
 
 * Everything located in /config/ folder..
 
->>>> THIS PAGE IS UNDER CONSTRUCTION <<<<  
+ >>>> All configurations and Macros are UNDER CONSTRUCTION, don't use them !!! <<<<  
