@@ -1,0 +1,4 @@
+; Called in the starting script of the slicer profile M98 P"/macros/Filament/PETG Starting Script"
+M104 T0 S235 ; hotend to 235 degrees
+M140 S70    ; bed to 70 degrees
+M109 S235    ; wait for hotend to be 235 degrees

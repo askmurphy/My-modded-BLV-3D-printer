@@ -1,19 +1,15 @@
-;procedure volgens https://duet3d.dozuki.com/Wiki/Test_and_calibrate_the_Z_probe
-; https://duet3d.dozuki.com/Wiki/Gcode#main
-
-M280 P0 S160 I1			; Alarm Release and Push-Pin UP
+; Z calibration with BLTouch sensor
 
 M291 P"Starting z calibration" R"Z calibration" S0 T2
-M291 P"Homing all axiss" R"Z calibration" S0 T10
-G28	; Home all axis
+M291 P"Cancel any currently active mesh compensation" R"Z calibration" S0 T10
+M561
+M291 P"Heat up bed to 70'C" R"Z calibration" S0 T10
+M140 S70    ; bed to 70 degrees
+M564 S0 ; disable axis limits
+M291 P"Move probe to middle of bed" R"Z calibration" S0 T10
+G28 XY
+G1 X171 Y190 F4000 ; Move probe to middle of bed (ASK: OK)
 
-M291 P"Dynamische test gestart" R"Schakel printer direct uit als de hotend te dicht op het bed wordt gedrukt!!" S1 T2 	; display msg
-G30 ; Dynamische test
-
-M561 ; Cancel any currently active mesh compensation
-
-G1 X176 Y185 F6000 Z5 ; Move to center
-M564 S0; disable axis limits
 
 M291 P"put a paper under the hotend and jog until it touches the paper. Hit OK when finished" R"Z calibration" Z1 T0 S3
 M291 P"setting this position as z=0" R"Z calibration" S0 T2
@@ -22,13 +18,9 @@ M291 P"moving Z up 5mm" R"Z calibration" S3 T0
 G1 Z5 F3000 					; move z up 5mm
 M291 P"Probing Z position" R"Z calibration" S3 T0
 G30 S-1						; probing the Z position
+
 M291 P"go to console and copy the z value to config.g" R"Z calibration" S0 T5
 ;M291 P1 R"Z calibration" S1 T0
 M291 P"Z calibration" S1 T0
 ; write down the z position
 
-; play sound ;-)
-M300 S2000 P200
-G4 P200
-M300 S2500 P300
-G4 P300

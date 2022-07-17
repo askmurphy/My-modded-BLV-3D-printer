@@ -90,11 +90,10 @@ M558 P9 C"^zprobe.in" H10 F300 T9000                       ; set Z probe type to
 ;G31 P500 X-0.1 Y58 Z1.185 ; t1
 ;G31 P500 X-0.1 Y58 Z1.195 ; t2 iets beter 
 ;G31 P500 X-0.1 Y58 Z1.205 ; t3 zelfde niet goed
-G31 P500 X-0.1 Y58 Z1.080 ; 
-
-; bedsize X345 Y350 Z630
-M557 X0:345 Y58:392 S45:50                                 ; define mesh grid
-
+;G31 P500 X-0.1 Y58 Z0.80 ; 
+;G31 P500 X-0.1 Y58 Z1.089 ; macro 
+;G31 P500 X-0.1 Y58 Z0.989 ; finetuning babysteps te ver
+G31 P500 X-0.1 Y58 Z1.077 ; 
 ; ------------------------------------------------------------------------------------------------------------------------
 ;
 ; Configure Heaters and Sensors
