@@ -30,7 +30,7 @@ So, time to do some modifications, a lot of them....  Finally I am now at my BLV
 * Duet Web Control 3.4.0
 
 # Accelerator LIS3DSH
-Because this device needs a very good shielded cable to avoid malfunctions, I have used an UTP CAT7 cable. The accelerator can be connected to the 10 pins header named 'TEMP DAUGHTERBOARD', DUET2WIFI OR DUEX5, wiring:
+Because this device needs a very good shielded cable to avoid malfunctions, I have used an UTP CAT7 cable. The accelerator can be connected to the 10 pins header named 'TEMP DAUGHTERBOARD', located on the DUET2WIFI and DUEX5, wiring:
 
 | UTP    | Accelerator       | DUET2WIFI   | DUEX5       |
 |--------|-------------------|-------------|-------------|
@@ -44,7 +44,8 @@ Because this device needs a very good shielded cable to avoid malfunctions, I ha
 | UTP[8] | VCC               | 3.3V[8]     | 3.3V[8]     |
 
 * Note1: a 1K resistor must be fitted between SDO/SAO and UTP[6]
-* Note2: On my prototype PCB and configuration I used CS5 and CS6 (Duex5), on a new PCB I would use the table above..
+* Note2: just use one connector, DUET2WIFI or DUEX5
+* Note3: On my prototype PCB and configuration I used CS5 and CS6 (DUEX5), on a new PCB I would use the table above..
  
 # CONFIGURATION:
 
