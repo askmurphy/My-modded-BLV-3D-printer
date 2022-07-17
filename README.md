@@ -34,7 +34,7 @@ Because this device needs a very good shielded cable to avoid malfunctions, I ha
 
 
 
-| Electronic design | LoRa T-Beam |
+| UTP| Accelerator|DUET2WIFI| DUEX5|
 |------------|-------------|
 | ![Electronic design](img/Schematic.png?raw=true "Electronic design") | ![T-Beam v1.1](img/T-BeamV1dot1.jpeg?raw=true "T-Beam v1.1") |
 
