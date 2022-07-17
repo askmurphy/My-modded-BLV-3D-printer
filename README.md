@@ -43,8 +43,8 @@ Because this device needs a very good shielded cable to avoid malfunctions, I ha
 | UTP[7] | Not connected     |             |             |
 | UTP[8] | VCC               | 3.3V[8]     | 3.3V[8]     |
 
-Note1: a 1K resistor must be fitted between SDO/SAO and UTP[6].
-Note2: On my prototype PCB and configuration I used CS5 and CS6 (Duex5), on a new PCB I would use the table above..
+* Note1: a 1K resistor must be fitted between SDO/SAO and UTP[6]
+* Note2: On my prototype PCB and configuration I used CS5 and CS6 (Duex5), on a new PCB I would use the table above..
  
 # CONFIGURATION:
 
