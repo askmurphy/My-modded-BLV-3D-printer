@@ -45,7 +45,7 @@ Because this device needs a very good shielded cable to avoid malfunctions, I ha
 
 * Note1: a 1K resistor must be fitted between SDO/SAO and UTP[6]
 * Note2: just use one connector, DUET2WIFI or DUEX5
-* Note3: On my prototype PCB and configuration I used CS5 and CS6 (DUEX5), on a new PCB I would use the table above..
+* Note3: on my prototype PCB and configuration I used CS5 and CS6 (DUEX5), on a new PCB I would use the table above..
  
 # CONFIGURATION:
 
