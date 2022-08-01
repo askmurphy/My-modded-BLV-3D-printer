@@ -32,20 +32,19 @@ So, time to do some modifications, a lot of them....  Finally I am now at my BLV
 # Accelerator LIS3DSH
 Because this device needs a very good shielded cable to avoid malfunctions, I have used an UTP CAT7 cable. The accelerator can be connected to the 10 pins header named 'TEMP DAUGHTERBOARD', located on the DUET2WIFI and DUEX5, wiring:
 
-| UTP    | Accelerator       | DUET2WIFI   | DUEX5       |
-|--------|-------------------|-------------|-------------|
-| UTP[1] | INT1              | SPI_CS4[9]  | SPI_CS8[9]  | 
-| UTP[2] | GND               | GND[2]      | GND[2]      | 
-| UTP[3] | CS                | SPI_CS3[7]  | SPI_CS7[7]  | 
-| UTP[4] | SCL               | SPI_SCK[4]  | SPI_SCK[4]  | 
-| UTP[5] | SDA               | SPI_MOSI[5] | SPI_MOSI[5] |
-| UTP[6] | 1KOhm <-> SDO/SAO | SPI_MISO[6] | SPI_MISO[6] |
-| UTP[7] | Not connected     |             |             |
-| UTP[8] | VCC               | 3.3V[8]     | 3.3V[8]     |
+| UTP                 | Accelerator       | DUET2WIFI   | DUEX5       |
+|---------------------|-------------------|-------------|-------------|
+| UTP[1] white/orange | INT1              | SPI_CS3[7]  | SPI_CS7[7]  | 
+| UTP[2] orange       | GND               | GND[2]      | GND[2]      | 
+| UTP[3] white/green  | VCC               | 3.3V[8]     | 3.3V[8]     |
+| UTP[4] blue         | SCL               | SPI_SCK[4]  | SPI_SCK[4]  | 
+| UTP[5] blue/white   | SDA               | SPI_MOSI[5] | SPI_MOSI[5] |
+| UTP[6] green        | 1KOhm <-> SDO/SAO | SPI_MISO[6] | SPI_MISO[6] |
+| UTP[7] brown/white  | Not connected     |             |             |
+| UTP[8] brown        | CS                | SPI_CS4[9]  | SPI_CS8[9]  |
 
 * Note1: a 1K resistor must be fitted between SDO/SAO and UTP[6]
 * Note2: just use one connector, DUET2WIFI or DUEX5
-* Note3: on my prototype PCB and configuration I used CS5 and CS6 (DUEX5), on a new PCB I would use the table above..
  
 # CONFIGURATION:
 
